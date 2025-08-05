@@ -76,6 +76,7 @@ vim.o.splitbelow = true
 -- Sets how neovim will display certain whitespace characters in the editor.
 --  See `:help 'list'`
 --  and `:help 'listchars'`
+--  tab = '» ', removed from vim.opt.listchars
 vim.o.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
@@ -925,6 +926,6 @@ require('lazy').setup({
 -- vim: ts=2 sts=2 sw=2 et
 --
 -- Customized by lico
-vim.opt.expandtab = true
+--vim.opt.expandtab = true
 vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
